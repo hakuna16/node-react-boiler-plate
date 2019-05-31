@@ -1,0 +1,50 @@
+{
+  "name": "node-react-boiler-plate",
+  "version": "1.0.0",
+  "description": "Node Api Layer",
+  "main": "server.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "lint": "node_modules/.bin/eslint \"src/**/*.js\"",
+    "lint-fix": "node_modules/.bin/eslint \"src/**/*.js\" --fix",
+    "doc": "jsdoc -c jsdoc.conf.json"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "jsdoc": "^3.6.2",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1",
+    "pretty-quick": "^1.11.0",
+    "uuidv4": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
+    "express-http-context": "^1.2.2",
+    "global": "^4.3.2",
+    "http": "^0.0.0",
+    "morgan": "^1.9.1",
+    "regenerator-runtime": "^0.13.2",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-ui-express": "^4.0.4",
+    "winston": "^3.2.1",
+    "winston-logrotate": "^1.3.0"
+  }
+}

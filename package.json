@@ -1,0 +1,29 @@
+{
+    "name": "node-react-boiler-plate",
+    "version": "1.0.0",
+    "description": "Node React Boiler Plate Starter code",
+    "main": "index.js",
+    "license": "ISC",
+    "author": "Rituj",
+    "scripts": {
+        "update:client": "cd client && yarn",
+        "update:server": "cd server && yarn",
+        "update": "concurrently \"yarn run update:client\" \"yarn run update:server\"",
+        "client": "cd client && yarn start",
+        "server": "cd server && yarn run server",
+        "start": "concurrently \"yarn run client\" \"yarn run server\"",
+        "lint:client": "cd client && yarn run lint",
+        "lint:server": "cd server && yarn run lint",
+        "lint": "concurrently \"yarn run lint:client\" \"yarn run lint:server\"",
+        "lint-fix:client": "cd client && yarn run lint-fix",
+        "lint-fix:server": "cd server && yarn run lint-fix",
+        "lint-fix": "concurrently \"yarn run lint-fix:client\" \"yarn run lint-fix:server\"",
+        "doc:server": "cd server && yarn run doc",
+        "doc:client": "cd client && yarn run doc",
+        "doc": "concurrently \"yarn run doc:client\" \"yarn run doc:server\"",
+        "build": "cd client && yarn build"
+    },
+    "devDependencies": {
+        "concurrently": "^4.1.0"
+    }
+}
